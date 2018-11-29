@@ -1,0 +1,16 @@
+library(shiny)
+library(shinythemes)
+library(shinyWidgets)
+library(shinyjs)
+library(shinycssloaders)
+library(shinyBS)
+library(shinyhelper)
+library(tidyverse)
+library(magrittr)
+library(ggradar)
+library(DT)
+
+invisible(walk(list.files("modules", full.names = TRUE), source))
+# invisible(walk(list.files("helpers", full.names = TRUE), source))
+# CSS loaders
+options(spinner.type = 5, spinner.color = "#34495e")
